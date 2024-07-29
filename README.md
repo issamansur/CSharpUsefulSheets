@@ -1,2 +1,2 @@
-# CSharpUsefullSheets
-Any usefull c# prcatics which I found
+# CSharpUsefulSheets
+Any useful c# practices which I found
