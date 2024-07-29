@@ -7,6 +7,8 @@ using Bla.WebApi.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.ConfigureServices(builder.Configuration);
+// ...
+app.ConfigureApp();
 ```
 
 ### Extensions.cs
