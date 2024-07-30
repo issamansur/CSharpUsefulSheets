@@ -2,6 +2,20 @@
 
 Any useful c# practices which I found
 
+## Table of Contents
+
+- [Prepare Project](#prepare-project)
+- ASP.NET Core
+- -  Authentication
+- - - Bearer
+- - - - [Add Bearer Service for generating JWT](./ASP.NET/Authentication/Bearer/README.md#1-add-authservice-for-generating-jwt-token)
+- - - - [Add Bearer Middleware for validating JWT](./ASP.NET/Authentication/Bearer/README.md#2-add-authentication-middleware-for-validating-jwt-token)
+- - - - [Add Bearer Authentication in Swagger](./ASP.NET/Authentication/Bearer/README.md#3-add-bearer-authentication-in-swagger)
+- - [Exceptions](./ASP.NET/Exceptions/README.md)
+- - - [Exception Filter](./ASP.NET/Exceptions/ExceptionFilter/README.md)
+- - - [Exception Handler (or Middleware)](./ASP.NET/Exceptions/ExceptionHandler/README.md)
+
+
 ## Prepare Project
 
 ### Startup.cs
