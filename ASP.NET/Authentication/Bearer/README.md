@@ -1,50 +1,6 @@
 # Authentication / Bearer (JWT)
 
-### Startup.cs
-```csharp
-using Bla.WebApi.Extensions;
-
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.ConfigureServices(builder.Configuration);
-```
-
-### Extensions.cs
-
-```csharp
-public static class Extensions 
-{
-    public static IServiceCollection ConfigureServices(
-        this IServiceCollection services,
-        IConfiguration configuration
-    )
-    {
-        // services.AddAnyService();
-        
-        return services;
-    }
-    
-    public static WebApplication ConfigureApp(
-        this WebApplication app
-    )
-    {
-        // app.UseAnyMiddleware(); or else
-        
-        return app;
-    }
-    
-    // Private methods
-}
-```
-
-### P. S.
-You can use `ConfigureServices` and `ConfigureApp` methods in `Startup.cs` directly.
-
-Or you can split logic in other layers by `Dependency Injection`.
-
-<hr>
-
-## Add `AuthService` for generating JWT Token
+## 1. Add `AuthService` for generating JWT Token
 
 We imagine that we have `Account` model. For example, like this:
 
@@ -185,7 +141,7 @@ public static class Extensions
 }
 ```
 
-## Add Authentication Middleware for validating JWT Token
+## 2. Add Authentication Middleware for validating JWT Token
 
 ### Extensions.cs
 ```csharp
@@ -264,7 +220,7 @@ public static class Extensions
 }
 ```
 
-## Add Bearer Authentication in Swagger
+## 3. Add Bearer Authentication in Swagger
 
 ### Extensions.cs
 ```csharp
