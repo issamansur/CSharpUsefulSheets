@@ -1,6 +1,6 @@
-# Exceptions
+# ASP.NET / Exceptions
 
- Here you can find how to handle exceptions in ASP.NET Core.
+Here you can find how to handle exceptions in ASP.NET Core.
 
 ## Table of Contents
 
